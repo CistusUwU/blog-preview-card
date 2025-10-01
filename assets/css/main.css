@@ -114,3 +114,10 @@ body{
         line-height: 1.5;
     }
 }
+
+@media (min-width: 377px) and (max-width:768px){
+    .blog-preview-card{
+        width: 50%;
+    }
+    
+}
