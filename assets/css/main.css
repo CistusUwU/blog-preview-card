@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%)
+
+    
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.blog-preview-card{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    width: 24%;
+    padding: 24px 24px;
+    border-radius: 5%;
+    box-shadow: 8px 8px black;
+    border: solid 1.5px;
+}
+
+.blog-preview-card_img{
+    display: flex;
+    border-radius: 5%;
+}
+
+.blog-preview-card__tag{
+    padding: 8px 16px;
+    margin: 20px 0;
+    background: var(--yellow);
+    width: fit-content;
+    border-radius: 7%;
+    font-weight: 800;
+    font-size: 14px;
+    
+}
+
+.blog-preview-card__date{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+.blog-preview-card__title{
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.blog-preview-card__title:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.blog-preview-card__decription{
+    color: var(--Gray-500);
+    line-height: 1.4;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 24px;
+
+}
+
+.blog-preview-card__author{
+    display: flex;
+    align-items: center;
+
+}
+
+.blog-preview-card__author-avatar{
+    width: 11%;
+}
+
+.blog-preview-card__author-name{
+    margin-left: 14px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+@media (max-width: 376px){
+    .blog-preview-card{
+        width: 87%;
+    }
+
+    .blog-preview-card__tag{
+        font-size: small;
+    }
+
+    .blog-preview-card__date{
+        font-size: small;
+    }
+
+    .blog-preview-card__title{
+        font-size: larger;
+    }
+
+    .blog-preview-card__decription{
+        font-size: small;
+        line-height: 1.5;
+    }
+}
