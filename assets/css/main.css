@@ -29,6 +29,7 @@ body{
     flex-direction: column;
     background: var(--white);
     width: 24%;
+    min-width: 350px;
     padding: 24px 24px;
     border-radius: 5%;
     box-shadow: 8px 8px black;
@@ -95,6 +96,7 @@ body{
 @media (max-width: 376px){
     .blog-preview-card{
         width: 87%;
+        min-width: 300px;
     }
 
     .blog-preview-card__tag{
@@ -118,6 +120,7 @@ body{
 @media (min-width: 377px) and (max-width:768px){
     .blog-preview-card{
         width: 50%;
+        min-width: 300px;
     }
     
 }
