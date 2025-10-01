@@ -117,10 +117,9 @@ body{
     }
 }
 
-@media (min-width: 377px) and (max-width:768px){
+@media (min-width: 377px) and (max-width:741px){
     .blog-preview-card{
         width: 50%;
         min-width: 300px;
     }
-    
 }
